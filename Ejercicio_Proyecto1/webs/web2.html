@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PUPURRI</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #contenedor{
+                width:  100%;
+                margin: auto;
+                margin-top: 5px;
+            }
+            h1{
+                text-align: center;
+                background-color: rgb(241, 249, 4);
+                color: #FF1493;
+            }
+            div.tabla table, th, td{
+                border: 2px solid red;
+                border-collapse: collapse;
+            }
+            div.tabla table caption{
+                background-color: aquamarine;
+                color: rgb(255, 0, 47);
+                font-weight: bold;
+            }
+            div.tabla table thead tr{
+                height: 25px;
+                background-color: bisque;
+            }
+            div.tabla table tbody tr:hover{
+                background-color: #FF1493;
+            }
+            div.tabla table tfoot td{
+                text-align: center;
+                background-color: aquamarine;
+                color: rgb(255, 0, 0);
+            }
+            table{
+                width: 100%;
+            }
+            th{
+                width: 25%;
+            }
+            table{
+                /*height: 40%;*/
+                width: 100%;
+                background-color: aqua;
+                color: red;
+            }
+            /* selector de etiquetas*/
+            img{
+                float: center;
+                width:        33%;
+                height:       33%;
+            }
+            hr{
+                color: blue;
+                width: 75%;
+                margin: 20px auto 20px auto;
+            }
+            code{
+                margin-left: 64px;
+                margin-right: 64px;
+            }
+            .separador{
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            <div class="tabla">
+                <h1>Formulario Historico</h1>
+                <table>
+                    <caption>Esta es la web 2</caption>
+                    <thead>
+                        <tr><!--Row igual a fila, table igual a tabla-->
+                            <th>Antiguo</th>
+                            <th>IBM</th>
+                            <th>Época</th>
+                            <th>Nuevo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1914</td>
+                            <td>1967</td>
+                            <td>2000</td>
+                            <td>2025</td>
+                        </tr>
+                        <tr>
+                            <td>1917</td>
+                            <td>1973</td>
+                            <td>2004</td>
+                            <td>2032</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Toda una pequeña Representación de la Historia PC*</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <hr />
+            <ol type="a">
+                <li><img src="./foto_PCs/oldpc.jpg" alt="PC antiguo" /></li>
+                <li><b><pre>
+                    De los primeros PC antiguos*
+
+                </pre></b></li>
+                <li><img src="./foto_PCs/ibmpc.jpg" alt="PC ibm" /></li>
+                <li><pre>
+            De los primeros PC <i><small>IBMs*</small></i></pre></li>
+                <li><img src="./foto_PCs/epocapc.jpg" alt="PC epoca" /></li>
+                <li><mark>De los primeros PC de la <i>Época*</i></mark></li>
+            </ol>
+            
+            <ul>
+                <li><img src="./foto_PCs/newpc.jpeg" alt="PC nuevo" /></li>
+                <li><blockquote>
+                    Última Generación de PCs*
+                </blockquote></li>
+            </ul>
+        </div>
+        <br /><code>
+            &lt;Casi casi ...&gt;
+        </code>
+        <br class="separador" />
+        <p><time>10/09/2022</time></p>
+    </body>
+</html>

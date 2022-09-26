@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es-ES>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Etiquetas generales</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #contenedor{
+                width:80%;
+                margin: 20px auto 0 auto;
+            }
+            /******tabla 1******************************/
+            div.tabla table, th, td{
+                border: 1px solid red;
+                border-collapse: collapse;
+            }
+            div.tabla table thead tr{
+                height: 25px;
+                background-color: bisque;
+            }
+            div.tabla table tbody tr:hover{
+                background-color: aqua;
+            }
+            div.tabla table caption{
+                background-color: antiquewhite;
+                color:red;
+                font-weight: bold;
+            }
+            div.tabla table tfoot td{
+                text-align: center;
+                background-color: blueviolet;
+                color: white;
+            }
+            table{
+                width: 100%;
+            }
+            th{
+                width: 33.3%;
+            }
+            /************tabla 2*********************/
+            hr{
+               color: aqua;
+               width: 80%;
+               margin: 20px auto 20px auto;
+            }
+            div.tablaDos table{
+                width: 100%;
+            }
+            div.tablaDos{
+                overflow-x: auto;
+            }
+            div.tablaDos thead tr th{
+                width: 25%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr><!--Row igual a fila table igual a tabla-->
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>C.P.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jesús</td>
+                            <td>Pero</td>
+                            <td>09006</td>
+                        </tr>
+                        <tr>
+                            <td>J. Angel</td>
+                            <td>Pérez</td>
+                            <td>09006</td>
+                        </tr>
+                        <tr>
+                            <td>J. Angel</td>
+                            <td>Pérez</td>
+                            <td>09006</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Fin de tabla</td>
+                        </tr>
+                    </tfoot>
+                    <caption>Tabla 1</caption>
+                </table>
+            </div>
+            <hr />
+            <div class="tablaDos">
+                <table>
+                    <caption>Tabla 2</caption>
+                    <thead>
+                        <tr>
+                            <th>campo 1</th>
+                            <th>campo 2</th>
+                            <th>campo 3</th>
+                            <th>campo 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">d1</td>
+                            <td>d2</td>
+                            <td>d3</td>
+                            <td>d4</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">d5</td>
+                            <td>d6</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Pie</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <picture>
+                <source media="(min-width: 1920px)" srcset="./fotos/volvog.jpg" alt="Foto grande" />
+                <source media="(min-width: 1200px)" srcset="./fotos/volvom.jpg" alt="Foto mediana" />
+                <source media="(min-width:  800px)" srcset="./fotos/volvop.jpg" alt="Foto pequeña" />
+                <img src="./fotos/volvomp.jpg" alt="Volvo" />
+            </picture>
+            <object data="./videos/video1.mp4" type="video/mp4" ><!--Audioi, video, java applets, activex, pdf,flash-->
+            </object>
+            <object data="./audio/audio1.mp3"  type="audio/mp3" width="100px" height="50px" name="caja de sonido">
+            </object>
+        </div>
+    </body>
+</html>
